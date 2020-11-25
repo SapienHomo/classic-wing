@@ -25,3 +25,4 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm i
+    - run: node Discord_Anti_Invite.js
