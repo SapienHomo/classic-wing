@@ -14,4 +14,3 @@ if (message.author.bot) {
                 })
         }
     }
-client.login("NzgwODI5NTc5NTcyNDEyNDU3.X70yNg.WLAOAsYr2Qv0xc4RCOnHAMqb4xs")
