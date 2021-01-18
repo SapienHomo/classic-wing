@@ -1,0 +1,35 @@
+<html>
+ <head> 
+  <title>reCaptcha</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ </head> 
+ <body> 
+  <center> 
+   <form action="?" method="POST"> 
+    <div id="recaptcha" class="g-recaptcha" data-sitekey="6LdyfpQUAAAAAOT8Lp9nb5hVgcuRMyo6Qm7ZBAis" data-callback="onSuccess"> 
+     <div style="width: 304px; height: 78px;"> 
+      <div> 
+       <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdyfpQUAAAAAOT8Lp9nb5hVgcuRMyo6Qm7ZBAis&amp;co=aHR0cDovL3NvZnRpY2Uua3JvLmtyOjgw&amp;hl=en-GB&amp;v=r8jtf1oixV0IGff4hgB4EzDF&amp;size=normal&amp;cb=ep6v1osf9yqp" width="304" height="78" role="presentation" name="a-4gaq1lrrfj1h" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe> 
+      </div> 
+      <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea> 
+     </div> 
+     <iframe style="display: none;"></iframe> 
+    </div> 
+    <script>
+                      var onSuccess = function(response) {
+                        setTimeout(function() {
+                        parent.location.href = "https://m.naver.com";
+                          }, 800);
+                        };</script> 
+   </form> 
+  </center> 
+  <div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"> 
+   <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div> 
+   <div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div> 
+   <div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div> 
+   <div style="z-index: 2000000000; position: relative;"> 
+    <iframe title="recaptcha challenge" src="https://www.google.com/recaptcha/api2/bframe?hl=en-GB&amp;v=r8jtf1oixV0IGff4hgB4EzDF&amp;k=6LdyfpQUAAAAAOT8Lp9nb5hVgcuRMyo6Qm7ZBAis&amp;cb=ky68tk1kclpa" name="c-4gaq1lrrfj1h" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe> 
+   </div> 
+  </div> 
+ </body>
+</html>
